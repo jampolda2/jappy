@@ -1,0 +1,161 @@
+/*Global Styles */
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Arial sans-serif;
+}
+
+header{
+    background: rgb(10, 232, 2);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li a{
+    color: azure;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar li a.active,
+.navbar li a:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(11, 63, 236);
+    border-radius: 5px;
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: azure;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+#menu-toggle:checked +.menu-icon + .navbar{
+    display: block;
+    flex-direction: column;
+    background: blue;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
+
+section{
+    background-color: aquamarine;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+section .section-content h1{
+    color: black;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+section .section-content h2{
+    color:rgb(249, 1, 1);
+    font-size: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+section .section-content p{
+    color:rgb(0, 0, 0);
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    text-align: center;
+}
+
+section img{
+    height: 900px;
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    background: greenyellow;
+    color: azure;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-col h4{
+    margin-bottom: 10px;
+    font-size: 18px
+}
+
+.footer-col ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+}
+
+.footer-col form{
+    margin-top: 10px;
+}
+
+.footer-col input{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.footer-col button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background:rgb(249, 1, 1);
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.footer-col button:hover{
+    background: antiquewhite;
+}
+
+
